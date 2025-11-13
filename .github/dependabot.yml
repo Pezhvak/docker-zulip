@@ -15,3 +15,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: "uv"
+    directory: "/docs"
+    commit-message:
+      prefix: docs-deps
+    groups:
+      docs-deps:
+        patterns:
+          - "*"
+    schedule:
+      interval: "weeklt"
